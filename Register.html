@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome To My Airlines</title>
+		<link rel="stylesheet" href="Mystyle.css"/>
+		
+		<script>
+		function validatingRegistration()
+		{
+			alert('you are in a validatri')
+			/*alert(document.getElementById("myemail").value);
+			alert(document.getElementById("mypass").value);
+			alert(document.getElementById("mydob").value);
+			alert(document.getElementById("myadd").value);*/
+			
+			let email=document.getElementById("myemail").value;
+			let password=document.getElementById("mypass").value;
+			let date=document.getElementById("mydob").value;
+			let add=document.getElementById("myadd").value;
+			
+			if(email=''){
+				alert('email cannot be blank ');
+				return false;
+			}
+			if(password=''){
+				alert('email cannot be blank ');
+				return false;
+			}
+			if(date=''){
+				alert('email cannot be blank ');
+				return false;
+			}
+			if(add=''){
+				alert('email cannot be blank ');
+				return false;
+			}
+			
+			
+			
+		}
+		
+		
+		</script>
+		
+		
+	</head>
+	
+	<body>
+	<form action="login.html">
+		<h1>Welcome To My Airlines</h1>	
+				
+		<hr>
+		<a href="Home.html">Back</a> 
+		
+		<h2>Registration Process</h2>
+		<table border=3 cellspacing=10 cellpadding=10>
+		
+			<tr><td>Enter email</td>  <td> <input type=text id="myemail"> </td> </tr>
+			<tr><td>Enter password</td>  <td> <input type=password id="mypass"></td> </tr>
+			<tr><td>Enter birthdate</td>  <td> <input type=date id="mydob"> </td> </tr>
+			<tr><td>Enter address</td>  <td> <input type=text id="myadd"></td> </tr>
+		</table>	
+		
+		
+		<button onclick="validatingRegistration();">Register ME</button>
+		Already a member? login <a href="Login.html">here</a>
+		</form>
+	</body>
+</html>
